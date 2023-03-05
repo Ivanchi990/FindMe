@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FindMe</string>
+
+    <string name="mapbox_access_token">pk.eyJ1IjoiaXZhbmNoaTk5MCIsImEiOiJjbGU2c25jMWMwcTJyM3FxZHR2dHVpM2YyIn0.rexLZLHaK8WijE2DaepKBA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
