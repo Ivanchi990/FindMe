@@ -27,13 +27,15 @@ class MainActivity : AppCompatActivity()
         {
             locationPermissionRequest.launch(
                 arrayOf(
-                    Manifest.permission.ACCESS_FINE_LOCATION,
-                    Manifest.permission.ACCESS_COARSE_LOCATION,
-                    Manifest.permission.INTERNET
+                    android.Manifest.permission.ACCESS_FINE_LOCATION,
+                    android.Manifest.permission.ACCESS_COARSE_LOCATION,
+                    android.Manifest.permission.INTERNET
                 )
             )
             if (PermissionsManager.areLocationPermissionsGranted(this))
+            {
                 return true
+            }
             else
             {
                 false
@@ -47,8 +49,8 @@ class MainActivity : AppCompatActivity()
     ) { permissions ->
         when
         {
-            permissions.getOrDefault(Manifest.permission.ACCESS_FINE_LOCATION, false) -> {}
-            permissions.getOrDefault(Manifest.permission.ACCESS_COARSE_LOCATION, false) -> {}
+            permissions.getOrDefault(android.Manifest.permission.ACCESS_FINE_LOCATION, false) -> {}
+            permissions.getOrDefault(android.Manifest.permission.ACCESS_COARSE_LOCATION, false) -> {}
 
             else ->
             {
